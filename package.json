@@ -1,0 +1,25 @@
+{
+  "name"         : "didier-baquier-business-card",
+  "version"      : "0.0.1",
+  "description"  : "An online business card with a picture of me inside",
+  "main"         : "server-business-card.js",
+  "author"       : "dbaq",
+  "dependencies" : {
+    "express"    : "~4.x",
+    "serve-static": "x",
+    "body-parser": "x",
+    "method-override": "x",
+    "morgan": "x"
+    },
+  "devDependencies": {
+    "grunt": "0.4.4",
+    "grunt-contrib-uglify" : "0.4.0",
+    "grunt-contrib-concat": "0.4.0",
+    "grunt-contrib-cssmin" : "0.8.0",
+    "grunt-contrib-watch" : "0.6.1",
+    "dp-grunt-contrib-copy" : "0.4.1",
+    "grunt-usemin" : "2.1.1",
+    "grunt-contrib-copy" : "0.5.0",
+    "grunt-contrib-clean" : "0.5.0"
+  }
+}
