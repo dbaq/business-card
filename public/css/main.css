@@ -232,7 +232,7 @@ a.mail i:before {font-size: 150%;}
 
 @media only screen and (max-width : 480px) {
   body {
-    background: url(../img/cover-m.jpg) no-repeat center center fixed;
+    background: url(../img/cover-d.jpg) no-repeat left center fixed;
     background-size: cover;
   }
 
