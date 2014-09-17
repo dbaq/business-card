@@ -242,6 +242,10 @@ a.mail i:before {font-size: 150%;}
 
   #card {
     margin: 20px 0;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
   }
 
   #header{
