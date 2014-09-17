@@ -110,6 +110,7 @@ body {
   min-width: 320px;
   min-height: 500px;
   height: 100%;
+  background-color: black;
   background: url(../img/cover-d.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
