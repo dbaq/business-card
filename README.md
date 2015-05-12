@@ -1,4 +1,4 @@
-## [Business-card](http://www.didiebaquier.com)
+## [Business-card](http://www.didiebaquier.fr)
 
 Used @RomaLefrancois's business card project: https://github.com/RomaLefrancois/business-card
 
