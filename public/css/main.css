@@ -97,8 +97,6 @@ Author's custom styles
 
 .icon-inline:before {
   font-size: 80%;
-  margin-right: 0;
-  margin-left: 0.1px;
   color: #263238;
   opacity: 0.8;
 }
@@ -210,6 +208,10 @@ body {
   color: #263238;
 }
 
+#body p span.notice {
+  font-size: 80%;
+}
+
 /* Footer with links */
 
 #footer {
@@ -272,6 +274,10 @@ a.mail i:before {font-size: 150%;}
   }
 
   #body {padding: 0em 1.5em .5em;margin-top:-1em}
+
+  #body p span.notice {
+    display: none;
+  }
 
   #footer {
     font-size: .8em;
@@ -471,5 +477,9 @@ Print styles
   h2,
   h3 {
     page-break-after: avoid;
+  }
+  
+  #body p span.notice {
+    display: none;
   }
 }
