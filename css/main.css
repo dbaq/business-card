@@ -208,8 +208,36 @@ body {
   color: #263238;
 }
 
-#body p span.notice {
+#body p.notice {
   font-size: 80%;
+}
+
+ul.projects {
+  padding: 0 .5em 0 .5em;
+  list-style: none;
+}
+
+ul.projects li a {
+  text-decoration: none;
+}
+
+ul.projects li a h4 {
+  display: inline-block;
+  margin: 0;
+}
+
+ul.projects li a h4:hover {
+  text-decoration: underline;
+}
+
+ul.projects li a img {
+  margin-top: -1px;
+  height: 16px;
+}
+
+ul.projects li p {
+  font-size: .85em;
+  color: #555;
 }
 
 /* Footer with links */
@@ -275,7 +303,7 @@ a.mail i:before {font-size: 150%;}
 
   #body {padding: 0em 1.5em .5em;margin-top:-1em}
 
-  #body p span.notice {
+  #body p.notice {
     display: none;
   }
 
@@ -479,7 +507,7 @@ Print styles
     page-break-after: avoid;
   }
   
-  #body p span.notice {
+  #body p.notice {
     display: none;
   }
 }
