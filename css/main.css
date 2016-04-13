@@ -1,68 +1,3 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
-html {
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-audio,
-canvas,
-img,
-video {
-  vertical-align: middle;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-
-/* ==========================================================================
-Author's custom styles
-========================================================================== */
-
-/* General */
-
 @font-face {
   font-family: 'fontello';
   src: url('../font/fontello.eot?89403044');
@@ -100,116 +35,108 @@ Author's custom styles
   color: #263238;
   opacity: 0.8;
 }
-
-a {
-  color: #90a4ae;
-  -webkit-transition: color .3s;
-  -moz-transition: color .3s;
-  -o-transition: color .3s;
-  -ms-transition: color .3s;
-  transition: color .3s;
+  
+html {
+  font-size: 16px;
+  font-family: "AvenirNextLTW01-Regular", "Avenir Next", sans-serif;
+  line-height: 1.6
 }
-a:visited {color: #90a4ae;}
-
-html {height: 100%;}
 
 body {
-  min-width: 320px;
-  min-height: 500px;
-  height: 100%;
-  background-color: black;
-  background: url(../img/cover-d.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  margin: 0
 }
 
-.wrap {
-  height: 100%;
-  text-align:center;
-  overflow: hidden;
+::selection {
+  background-color: #5f7782;
+  color: #fff
 }
 
-.wrap:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+h1, h2, h3, h4, h5, h6, b, strong {
+  color: #900;
+  font-weight: normal;
+  font-family: "Avenir Next LT W01 Bold", "Avenir Next", sans-serif;
+  word-break: break-word
 }
 
-/* Card */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 3rem
+}
 
-#card {
-  width: 600px;
-  max-width: 90%;
+b, strong {
+  color: #222
+}
+
+strong em, h2 em {
+  font-family: "Avenir Next LT W01 Bold", "Avenir Next", sans-serif;
+  font-style: italic
+}
+
+em, i {
+  font-family: "AvenirNextLTW01-Italic", "Avenir Next", sans-serif;
+  font-style: normal
+}
+
+a {
+  color: #5f7782
+}
+
+img {
+  border: 0;
+}
+
+.content p {
+  margin: 1rem 0 1rem 0
+}
+.content a {
+  text-decoration: none;
+  border-bottom: 2px solid #b3c1c7;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease;
+  -ms-transition: border-color 0.2s ease;
+  -o-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease
+}
+.content a:hover {
+  border-color: #5f7782
+} 
+
+body.full .hero {
+  height: 500px;
+}
+
+header {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  background: rgba(255,255,255,0.95);
-  box-shadow: 0 1px 2px #777;
-  border-radius: 2px;
-  text-align:left;
-  -webkit-animation: enter .5s .5s ease both;
-  -moz-animation: enter .5s .5s ease both;
-  -o-animation: enter .5s .5s ease both;
-  animation: enter .5s .5s ease both;
 }
 
-/* Profile picture */
-
-#picture {
-  width: 6em;
-  height: 6em;
-  position: absolute;
-  top: 1.5em;
-  left: 2em;
-  overflow: hidden;
-  background-color: #cacccd;
-  border-radius: 50%;
-  border: 2px solid #fff;
+.container {
+  margin: 0 auto;
+  max-width: 33rem;
+}
+.content {
+  padding: 0 2rem;
 }
 
-#picture img {
-  height: 100%;
+.content img {
+  min-width: 110%;
+  max-width: 110%;
+  margin-left: -5%;
+  border-radius: 5px
 }
 
-/* Header with name and title */
-
-#header {
-  padding: 1.5em 1.5em 1em 10em;
-  color: #fff;
-  background: rgba(96, 125, 139, 0.8);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #607d8b), color-stop(100%, #b0bec5));
-  background: -o-linear-gradient(left, #607d8b 0%, #b0bec5 100%);
-  background: -ms-linear-gradient(left, #607d8b 0%, #b0bec5 100%);
-  background: linear-gradient(to right, #607d8b 0%, #b0bec5 100%);
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background-color: #5f7782;
+  background-position: center center;
+  background-size: cover;
+  text-align: center
 }
 
-#name {
-  font-size: 1.6em;
-  margin-bottom: .3em;
-}
-#name b {font-weight: 400;}
-
-#job {
-  font-size: 1.2em;
-}
-
-/* Body with bio */
-
-#body {padding: 2em 1em 1em 2em;}
-
-#body p {
-  margin: 0.5em 0;
-  line-height: 2em;
-  color: #263238;
-}
-
-#body p.notice {
-  font-size: 80%;
+p.notice {
+  font-size: .75em;
+  font-style: italic;
 }
 
 ul.projects {
@@ -219,6 +146,7 @@ ul.projects {
 
 ul.projects li a {
   text-decoration: none;
+  border: none;
 }
 
 ul.projects li a h4 {
@@ -231,8 +159,10 @@ ul.projects li a h4:hover {
 }
 
 ul.projects li a img {
-  margin-top: -1px;
   height: 16px;
+  margin: 0;
+  padding: 0;
+  min-width: initial;
 }
 
 ul.projects li p {
@@ -240,274 +170,27 @@ ul.projects li p {
   color: #555;
 }
 
-/* Footer with links */
-
-#footer {
-  width: 100%;
-  display: table;
-  position: relative;
-  bottom: 0;
-  border-top: 1px solid #cfd8dc;
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
-#footer > a {
-  display: table-cell;
-  padding: 1em;
-  text-align: center;
-}
-
-#footer > a span {display: none;}
-#footer a:active {color: #fff}
-a.twitter:hover {color: #00aced;}
-a.twitter:active {background: #00aced;}
-a.linkedin:hover {color: #007bb6;}
-a.linkedin:active {background: #007bb6;}
-a.github:hover {color: #444;}
-a.github:active {background: #444;}
-a.mail:hover {color: #dd2c00;}
-a.mail:active {background: #dd2c00;}
-a.mail i:before {font-size: 150%;}
-
-/* Mobile CSS */
-
-@media only screen and (max-width : 480px) {
-  body {
-    background: url(../img/cover-d.jpg) no-repeat left center fixed;
-    background-size: cover;
+@media (min-width: 38em) {
+  html {
+    font-size: 20px
   }
 
-  .wrap {
-    overflow-y: scroll;
-  }
-
-  #card {
-    margin: 20px 0;
-    -webkit-animation: none;
-    -moz-animation: none;
-    -o-animation: none;
-    animation: none;
-  }
-
-  #header{
-    padding: 1em 1em 2.5em;
-    text-align: center;
-    font-size: .9em;
-  }
-
-  #picture {
-    position: relative;
-    top: -25px;
-    margin: 0px auto;
-    left: initial;
-  }
-
-  #body {padding: 0em 1.5em .5em;margin-top:-1em}
-
-  #body p.notice {
-    display: none;
-  }
-
-  #footer {
-    font-size: .8em;
-    bottom: 0;
-    border: 0;
-  }
-
-  #footer > a {
-    border-top: 1px solid #cfd8dc;
-    display: block;
-    padding: 1em 1em 1em 2em;
-    text-align: left;
-  }
-
-  #footer > a span {
-    display: inline-block;
-    padding-left: 1.5em;
-    font-size: 1.1em;
+  ul.projects li a h4 { 
+    font-size: 120%;
   }
 }
 
-/*Keyframe Animation */
-
-@-webkit-keyframes enter {
-  from {
-    transform:translateY(5rem);
-    opacity:0;
-  }
-}
-@-webkit-keyframes enter {
-  from {
-    transform:translateY(5rem) rotate(10deg);
-    opacity:0;
-  }
-}
-@-moz-keyframes enter {
-  from {
-    transform:translateY(5rem);
-    opacity:0;
-  }
-}
-@-moz-keyframes enter {
-  from {
-    transform:translateY(5rem) rotate(10deg);
-    opacity:0;
-  }
-}
-@-o-keyframes enter {
-  from {
-    transform:translateY(5rem);
-    opacity:0;
-  }
-}
-@-o-keyframes enter {
-  from {
-    transform:translateY(5rem) rotate(10deg);
-    opacity:0;
-  }
-}
-@keyframes enter {
-  from {
-    transform:translateY(5rem);
-    opacity:0;
-  }
-}
-@keyframes enter {
-  from {
-    transform:translateY(5rem) rotate(10deg);
-    opacity:0;
-  }
-}
-
-
-/* ==========================================================================
-Helper classes
-========================================================================== */
-
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  *text-indent: -9999px;
-}
-
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
-}
-
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-
-/* ==========================================================================
-Print styles
-========================================================================== */
-
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-  
-  #body p.notice {
-    display: none;
+@media (max-width: 38em) {
+  .content img {
+    max-width: 100vw;
+    margin-left: -2rem;
+    border-radius: inherit
   }
 }
