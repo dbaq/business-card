@@ -39,45 +39,45 @@
 html {
   font-size: 16px;
   font-family: "AvenirNextLTW01-Regular", "Avenir Next", sans-serif;
-  line-height: 1.6
+  line-height: 1.6;
 }
 
 body {
-  margin: 0
+  margin: 0;
 }
 
 ::selection {
   background-color: #5f7782;
-  color: #fff
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong {
   color: #900;
   font-weight: normal;
   font-family: "Avenir Next LT W01 Bold", "Avenir Next", sans-serif;
-  word-break: break-word
+  word-break: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 3rem
+  margin-top: 3rem;
 }
 
 b, strong {
-  color: #222
+  color: #222;
 }
 
 strong em, h2 em {
   font-family: "Avenir Next LT W01 Bold", "Avenir Next", sans-serif;
-  font-style: italic
+  font-style: italic;
 }
 
 em, i {
   font-family: "AvenirNextLTW01-Italic", "Avenir Next", sans-serif;
-  font-style: normal
+  font-style: normal;
 }
 
 a {
-  color: #5f7782
+  color: #5f7782;
 }
 
 img {
@@ -85,7 +85,7 @@ img {
 }
 
 .content p {
-  margin: 1rem 0 1rem 0
+  margin: 1rem 0 1rem 0;
 }
 .content a {
   text-decoration: none;
@@ -94,10 +94,10 @@ img {
   -moz-transition: border-color 0.2s ease;
   -ms-transition: border-color 0.2s ease;
   -o-transition: border-color 0.2s ease;
-  transition: border-color 0.2s ease
+  transition: border-color 0.2s ease;
 }
 .content a:hover {
-  border-color: #5f7782
+  border-color: #5f7782;
 } 
 
 body.full .hero {
@@ -108,19 +108,17 @@ header {
   position: relative;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 33rem;
-}
 .content {
   padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 33rem;
 }
 
 .content img {
   min-width: 110%;
   max-width: 110%;
   margin-left: -5%;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .hero {
@@ -131,7 +129,8 @@ header {
   background-color: #5f7782;
   background-position: center center;
   background-size: cover;
-  text-align: center
+  text-align: center;
+  background-image: url(../img/hero.jpg);
 }
 
 p.notice {
